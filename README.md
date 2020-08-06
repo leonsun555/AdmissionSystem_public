@@ -1,6 +1,6 @@
-# ExamUploader
+# 北藝大招生行政系統
 
-> TNUA Exam uploader
+> TNUA AdmissionSystem
 
 ## Build Setup
 
