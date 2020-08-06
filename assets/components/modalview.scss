@@ -1,0 +1,23 @@
+.w3-modal {
+    display: block !important;
+    z-index: 1000;
+    &-content {
+        @include respond(xs) {
+            width: 100vw
+        }
+        @include respond(sm) {
+            width: 100vw
+        }
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgb(32, 32, 32);
+        outline: 1px solid rgb(102, 120, 138);
+    }
+}
+
+footer {
+    padding: 0.5rem;
+}
+
+

@@ -1,0 +1,20 @@
+.oFooter {
+    margin-top: 3rem;
+    padding: 3rem 1.5rem 3rem;
+    background-color: hsl(204, 71%, 94%) !important;
+    font-family: 'Domine', serif;
+    font-size: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-items {
+    margin-bottom: 15px;
+    height: 100%;
+    p {
+        margin: 2px;
+    }
+}

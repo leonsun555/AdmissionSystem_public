@@ -1,0 +1,49 @@
+// Media Query Breakpoints
+
+/*
+    0 - 550px: Extra small devices
+    550 - 992px: Small devices Tablets
+    992 - 1200px : Medium devices Desktops
+    1200+ Large devices Desktops
+
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == xs {
+        @media only screen and (max-width: 550px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == sm {
+        @media only screen and (min-width: 550px) and (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == md {
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == lg {
+        @media only screen and (min-width: 1200px) {
+            @content;
+        }
+    }
+}
+
+@mixin center() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin flex-center() {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}

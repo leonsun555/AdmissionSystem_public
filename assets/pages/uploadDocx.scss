@@ -1,0 +1,36 @@
+.uploadDocx {
+    &-content {
+        min-width: 80vw;
+        height: 76vh;
+        box-shadow: 0.1em 0 0.3em rgba(0,0,0,0.1),
+        -0.1em 0 0.3em rgba(0,0,0,0.1),
+        0 0.1em 0.3em rgba(0,0,0,0.1),
+        0 -0.1em 0.3em rgba(0,0,0,0.1);
+        @include flex-center();
+
+        @include respond(sm) {
+            min-width: 90vw;
+        }
+        @include respond(xs) {
+            min-width: 100vw;
+        }
+    }
+
+    &-field {
+        width: 30vw;
+        .pure-text{
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+        }
+        @include respond(md) {
+            min-width: 40vw;
+        }
+        @include respond(sm) {
+            min-width: 60vw;
+        }
+        @include respond(xs) {
+            min-width: 80vw;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.page {
+    &-enter-active, 
+    &-leave-active {      
+        transition-property: opacity;
+        transition-timing-function: ease-in-out;
+        transition-duration: 1000ms;
+    }
+
+    &-enter,
+    &-leave-to {
+        opacity: 0;
+    }
+}
+
